@@ -225,7 +225,7 @@ export function RegistrationForm({ intro }: { intro?: ReactNode }) {
   
         <SectionCard id="prayer" title="Any Prayer Request?" optional icon={{ src: "/icons/prayer.svg", width: 12.2625, height: 15.2812 }} className="gap-2">
           <p id="prayer-note" className="flex w-full items-center gap-1.5 text-[13px] leading-[18px] text-body">
-            <Icon src="/icons/heart-lock.svg" width={13.3333} height={12.2333} className="shrink-0" />
+            <Icon src="/icons/heart-lock.svg" width={13.3333} height={12.2333} />
             Our pastoral team and intercessors pray over every note this week in strict confidence.
           </p>
           <div className="w-full pt-1">
