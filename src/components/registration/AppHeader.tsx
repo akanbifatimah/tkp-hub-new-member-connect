@@ -6,7 +6,7 @@ export function AppHeader() {
       <div className="mx-auto flex h-14 max-w-[480px] items-center px-4">
         <div className="flex items-center gap-2">
           <Image src="/images/tkp-logo.png" alt="" width={27} height={27} className="size-[27px] object-cover" priority />
-          <span className="font-display text-[16px] leading-[18px] font-semibold tracking-[-0.45px] text-ink">
+          <span className="font-display text-[16px] leading-4.5 font-semibold tracking-[-0.45px] text-ink">
             TKP Hub
           </span>
         </div>
