@@ -1,3 +1,4 @@
+import { Icon } from "@/components/Icon";
 import Image from "next/image";
 
 export function WelcomeHero() {
@@ -23,7 +24,7 @@ export function WelcomeHero() {
 
       <div className="relative flex flex-col gap-1 rounded-t-xl bg-espresso p-6">
         <span className="flex w-fit items-center gap-1.5 rounded-full bg-gold/20 px-2.5 py-1">
-          <Image src="/icons/sparkle.svg" alt="" width={12.8333} height={12.8333} />
+          <Icon src="/icons/sparkle.svg" width={12.8333} height={12.8333} />
           <span className="text-[12px] leading-4 font-semibold tracking-[0.96px] text-gold-light">
             First Time Visitor
           </span>

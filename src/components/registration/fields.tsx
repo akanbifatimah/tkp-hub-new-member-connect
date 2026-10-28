@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Icon } from "@/components/Icon";
 import type { ComponentProps, ReactNode } from "react";
 
 const errorRing = "ring-1 ring-danger";
@@ -45,7 +45,7 @@ export function IconField({ id, label, hint, required, icon, error, className = 
           {...inputProps}
         />
         <span className="pointer-events-none absolute left-4 flex w-[17px] justify-center">
-          <Image src={icon.src} alt="" width={icon.width} height={icon.height} />
+          <Icon src={icon.src} width={icon.width} height={icon.height} />
         </span>
       </div>
       <FieldError id={errorId} message={error} />
@@ -76,7 +76,7 @@ type ChoiceProps = ComponentProps<"input"> & { children: ReactNode; className?: 
 export function Choice({ children, className = "", ...radioProps }: ChoiceProps) {
   return (
     <label
-      className={`cursor-pointer select-none has-focus-visible:ring-2 has-focus-visible:ring-gold-deep ${className}`}
+      className={`select-none has-focus-visible:ring-2 has-focus-visible:ring-gold-deep ${className}`}
     >
       <input type="radio" className="sr-only" {...radioProps} />
       {children}

@@ -10,8 +10,7 @@ export default function GuestRegistrationPage() {
       <main className="mx-auto flex w-full max-w-[480px] flex-1 flex-col bg-cream pt-2 pb-10">
         <PageTitleBar title="Guest Registration" />
         <div className="flex w-full flex-col gap-6 px-4 pt-4">
-          <WelcomeHero />
-          <RegistrationForm />
+          <RegistrationForm intro={<WelcomeHero />} />
         </div>
       </main>
     </>

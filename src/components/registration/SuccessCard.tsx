@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Icon } from "@/components/Icon";
 
 export function SuccessCard({ firstName }: { firstName?: string }) {
   return (
@@ -9,7 +9,7 @@ export function SuccessCard({ firstName }: { firstName?: string }) {
       <div aria-hidden className="absolute -right-6 -bottom-6 size-32 rounded-full bg-gold/10" />
       <div className="relative flex items-start gap-2">
         <span className="flex size-10 shrink-0 items-center justify-center rounded-full bg-[linear-gradient(135deg,var(--color-gold-light)_0%,var(--color-gold-deep)_100%)] shadow-hero">
-          <Image src="/icons/heart.svg" alt="" width={20} height={18.35} />
+          <Icon src="/icons/heart.svg" width={20} height={18.35} />
         </span>
         <div className="flex min-w-0 flex-1 flex-col gap-1">
           <p className="text-[12px] leading-4 font-semibold tracking-[0.6px] text-gold-light uppercase">
